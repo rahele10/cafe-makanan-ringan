@@ -1,0 +1,97 @@
+  * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fdfaf6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eae2d6;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px dashed #d4a373;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: #8b4513;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            color: #a0522d;
+            font-size: 1.1rem;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 15px;
+            background-color: #faf6f0;
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .item-details {
+            max-width: 70%;
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #4a2c11;
+        }
+
+        .item-desc {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 4px;
+            line-height: 1.3;
+        }
+
+        .item-price {
+            font-size: 1.05rem;
+            font-weight: bold;
+            color: #d97706;
+            white-space: nowrap;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #888;
+            font-size: 0.9rem;
+        }
